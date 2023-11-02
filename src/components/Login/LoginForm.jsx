@@ -98,24 +98,24 @@ const LoginForm = () => {
 
 
     return (
-        <form action="" onSubmit={handleSubmit} className='p-6 mt-8'>
-            <div className='mx-5 flex justify-end items-center'>
+        <form action="" onSubmit={handleSubmit} className='py-6 md:px-6 px-2 lg:mt-8 mt-4'>
+            <div className='md:mx-5 flex justify-end items-center'>
                 <input type="email" name="email" placeholder='Enter email' onBlur={handleBlur} required className='w-full h-10 shadow-md rounded-md placeholder:text-gray-400 placeholder:pl-1 placeholder:font-medium focus:border-emerald-400 focus:outline-emerald-600 focus:px-2 p-2' />
                 <span className="absolute p-2"><FontAwesomeIcon icon={faAt} /></span>
             </div>
             {errors.email.length > 0 && <p className='bg-red-400 font-semibold mx-5 mt-2 py-1 rounded-md text-center'>{errors.email}</p>}
 
-            <div className='mx-5 mt-5 flex justify-end items-center'>
+            <div className='md:mx-5 mt-5 flex justify-end items-center'>
                 <input type="password" name="password" placeholder='Enter password' onBlur={handleBlur} required className='w-full h-10 shadow-md rounded-md placeholder:text-gray-400 placeholder:pl-1 placeholder:font-medium focus:outline-emerald-600 focus:px-2 p-2' />
                 <span className="absolute p-2"><FontAwesomeIcon icon={faLock} /></span>
             </div>
             {errors.password.length > 0 && <p className="bg-red-400 font-semibold mx-5 mt-2 py-1 rounded-md text-center">{errors.password}</p>}
 
-            <div className='ml-6 mt-2 mb-4'>
+            <div className='md:ml-6 mt-2 mb-4'>
                 <p onClick={handleResetPassword} className='text-sm cursor-pointer text-red-600 font-semibold'>Forgot Password?</p>
             </div>
 
-            <div className='my-2 mx-5'>
+            <div className='my-2 md:mx-5'>
                 <button type='submit' className='w-full h-12 shadow-md rounded-md bg-emerald-400 hover:bg-emerald-500'>
                     <span className='text-gray-700 font-semibold'>SUBMIT NOW</span>
                 </button>

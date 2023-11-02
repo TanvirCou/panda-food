@@ -27,9 +27,9 @@ const MyOrder = () => {
 
 
     return (
-        <div className='bg-gray-100 pt-20'>
+        <div className='bg-gray-100 pt-20 overflow-x-hidden'>
             <div>
-                <Navbar />
+                <Navbar></Navbar>
             </div>
             <div className=''>
                 {!loading && <div className='h-screen'>

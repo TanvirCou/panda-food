@@ -5,7 +5,7 @@ import SignUpForm from './SignUpForm';
 
 const SignUp = () => {
     return (
-        <div className='bg-gray-100 pt-20'>
+        <div className='bg-gray-100 pt-20 overflow-x-hidden'>
             <Navbar></Navbar>
             <div className='px-12 py-6 h-screen'>
                 <p className='text-2xl font-bold lg:text-left xl:ml-20 lg:ml-12 md:text-center sm:text-center min-[320px]:text-center' data-aos="fade-right" data-aos-duration="2000">Create an account</p>
